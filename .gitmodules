@@ -1,0 +1,3 @@
+[submodule "junyopar"]
+	path = junyopar
+	url = git@github.com:maindishes/algo-Al_th.git
