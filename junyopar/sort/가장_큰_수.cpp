@@ -8,7 +8,7 @@ bool scompare(std::string &a, std::string &b) {
     int len=0;
     if (a.length() >= b.length())
         len = b.length();
-    else
+    else 
         len = a.length();
     for(int i =0; i<len; ++i){
         if (a[i] > b[i]) {    
@@ -29,11 +29,9 @@ bool scompare(std::string &a, std::string &b) {
                 }
             }
             return true;
-        }
-        else
-            return false;
+        }    
     }
-    // return false;
+    return false;
 }
 std::string solution(std::vector<int> numbers) {
     std::string answer = "";
@@ -51,4 +49,3 @@ std::string solution(std::vector<int> numbers) {
     
     return answer;
 }
-asdfds
