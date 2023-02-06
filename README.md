@@ -36,3 +36,10 @@
 ||2|전화번호 목록|:heavy_check_mark:|
 ||2|위장|:heavy_check_mark:|
 ||3|베스트앨범||
+|완전탐색|1|최소직사각형|:heavy_check_mark:|
+||1|모의고사|:heavy_check_mark:|
+||2|소수찾기|:heavy_check_mark:|
+||2|카펫|:heavy_check_mark:|
+||2|피로도|:heavy_check_mark:|
+||2|전력망을 둘로 나누기|:heavy_check_mark:|
+||2|모음사전|:heavy_check_mark:|
