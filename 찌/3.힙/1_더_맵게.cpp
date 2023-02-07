@@ -7,19 +7,14 @@
 
 using namespace std;
 
-    // while (!pq.empty()) {
-    //     cout << pq.top() << " ";
-    //     pq.pop();
-    // }
-    // cout << endl;
 int solution(vector<int> scoville, int K) {
     int answer = 0;
+    //                  구현체          작은값으로
     priority_queue<int, vector<int>, greater<int> > pq;
 
     for (int i = 0; i < scoville.size(); i++) {
         pq.push(scoville[i]);
     }
-
 
     while (1) {
         // top이 가장 작은 건데 K보다 큰거니까 조건에 만족!
