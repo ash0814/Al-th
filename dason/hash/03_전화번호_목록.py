@@ -1,16 +1,20 @@
 def solution(phone_book):
-    phone_book.sort()
-    copy_book = phone_book
-    dict_book = dict(phone_book)
-    print(type(dict_book))
-
-    for number in phone_book:
-        for copy_number in copy_book:
-            if number == copy_number:
-                continue
-            if copy_number.startswith(number):
-                return False
-    return True
+    answer = True
+    hash_map = {}
+    for phone_number in phone_book:
+        hash_map[phone_number] = 1
+    for phone_number in phone_book:
+        temp = ""
+        for number in phone_number:
+            temp += number
+            print(temp)
+            print(hash_map)
+            print(temp in hash_map)
+            print(phone_number)
+            print()
+            if temp in hash_map and temp != phone_number:
+                answer = False
+    return answer
 
 
 if __name__ == '__main__':
