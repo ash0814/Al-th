@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 전에 품
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
     vector<int> answer;
 

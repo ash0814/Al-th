@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// 전에 품
 // 문자열 정렬!이 중요하다!
 bool solution(vector<string> phone_book) {
     bool answer = true;

@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// 전에 품
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
     vector<int> answer;
     return answer;
