@@ -3,15 +3,12 @@ def solution(brown, yellow):
     w = int(brown / 2)
     h = 2
     while w:
-        print(w * h)
-        print(brown + yellow)
         if w * h == brown + yellow:
             result.append(w)
             result.append(h)
             break
         w -= 1
         h += 1
-    print(result)
     return result
 
 
