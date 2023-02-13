@@ -1,5 +1,4 @@
 # DFS로 풀었는데 효율성 테스트 fail
-from collections import deque
 
 # 이동 우선순위
 # 남쪽 [0, 1]
@@ -63,3 +62,36 @@ def solution(maps):
     if min_route == 10000:
         return -1
     return min_route
+
+
+
+# DFS로 풀었지만 효율성 테스트 fail
+from collections import deque
+
+def solution(maps):
+    # 남 > 동 > 북 > 서
+    directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+    depth = 1
+    n, m = len(maps[0])-1, len(maps)-1
+    route = deque()
+    route.append([[0,0], depth])
+    visited = []
+    while route:
+        node = route.popleft()
+        # print("route", list(route), "visited", list(visited), "node", node[0], "depth", node[1])
+        # 처음 방문한 경우
+        if node[0] not in visited:
+            visited.append(node[0])
+            depth = node[1]
+            # 적 팀 진영 도착 시 depth 리턴 (node[1])
+            if node[0] == [n, m]:
+                return node[1]
+            # 연결될 수 있는 좌표 판단해서, route에 삽입하기
+            for direction in directions:
+                x = node[0][0] + direction[0]
+                y = node[0][1] + direction[1]
+                if x > n or x < 0 or y > m or y < 0:
+                    continue
+                if maps[y][x] == 1:
+                    route.append([[x, y], depth+1])
+    return -1
