@@ -1,6 +1,3 @@
 [submodule "junyopar"]
 	path = junyopar
 	url = https://github.com/maindishes/algo-Al_th.git
-[submodule "jseo"]
-	path = jseo
-	url = https://github.com/bigpel66/programmers.git
